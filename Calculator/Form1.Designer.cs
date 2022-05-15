@@ -50,7 +50,7 @@
             this.result.AutoSize = true;
             this.result.Location = new System.Drawing.Point(416, 89);
             this.result.Name = "result";
-            this.result.Size = new System.Drawing.Size(0, 13);
+            this.result.Size = new System.Drawing.Size(0, 15);
             this.result.TabIndex = 1;
             // 
             // arg1
@@ -78,10 +78,12 @@
             this.Controls.Add(this.arg1);
             this.Controls.Add(this.result);
             this.Controls.Add(this.button1);
+            this.Name = "Form1";
             this.Text = "I will add two numbers for you.";
             this.ResumeLayout(false);
             this.PerformLayout();
 
+            this.TextBoxValidityChanged += new TextBoxValidityChangedDelegate(OnTextBoxValidityChanged);
         }
 
         #endregion
